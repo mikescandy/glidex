@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:sample="clr-namespace:Android.Glide.Sample"
+    x:Class="Android.Glide.Sample.FlexLayoutPage"
+    Visual="Material"
+    BackgroundColor="Transparent"
+    Title="Grid Example">
+    <ScrollView BackgroundColor="Transparent">
+        <StackLayout BackgroundColor="Transparent">
+            <FlexLayout x:Name="F" Direction="Row" Wrap="Wrap" BackgroundColor="Transparent">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Frame>
+                            <Image WidthRequest="80" HeightRequest="80" Source="{Binding .}"></Image>
+                        </Frame>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

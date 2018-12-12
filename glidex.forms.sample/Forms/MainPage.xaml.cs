@@ -33,5 +33,9 @@ namespace Android.Glide.Sample
 		{
 			await Navigation.PushAsync (new HugeImagePage ());
 		}
-	}
+        async void Flex_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FlexLayoutPage());
+        }
+    }
 }

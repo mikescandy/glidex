@@ -50,12 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.8055-pre1" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0-preview8" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0-preview8" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0-preview8" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0-preview8" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0-preview8" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\EdgeCasesPage.xaml.cs">
@@ -63,6 +63,9 @@
     </Compile>
     <Compile Include="Forms\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FlexLayoutPage.xaml.cs">
+      <DependentUpon>FlexLayoutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\Images.cs" />
     <Compile Include="Forms\MainPage.xaml.cs">
@@ -168,6 +171,11 @@
       <Project>{d8d4d6c6-b845-4114-ade0-ea3777c5e452}</Project>
       <Name>glidex</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FlexLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

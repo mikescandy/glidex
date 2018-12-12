@@ -16,5 +16,7 @@
         <Button Clicked="ImageCell_Clicked" Text="ImageCells" />
         <Label Text="Huge Images (Profiled)" />
         <Button Clicked="HugeImage_Clicked" Text="Huge Images" />
+        <Label Text="Bindable FlexLayou:" />
+        <Button Clicked="Flex_Clicked" Text="FlexLayout Example" />
     </StackLayout>
 </ContentPage>

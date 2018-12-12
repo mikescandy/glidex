@@ -13,8 +13,9 @@ namespace Android.Glide.Sample
 			ToolbarResource = Resource.Layout.Toolbar;
 
 			base.OnCreate (bundle);
+            Xamarin.Forms.Forms.SetFlags("FastRenderers_Experimental", "CollectionView_Experimental", "Visual_Experimental", "Shell_Experimental");
 
-			Xamarin.Forms.Forms.Init (this, bundle);
+            Xamarin.Forms.Forms.Init (this, bundle);
 			//Force the custom renderers to get loaded
 			Android.Glide.Forms.Init (debug: true);
 			LoadApplication (new App ());
