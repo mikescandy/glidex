@@ -37,5 +37,9 @@ namespace Android.Glide.Sample
         {
             await Navigation.PushAsync(new FlexLayoutPage());
         }
+        async void Wrapper_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new WrapperBugPage());
+        }
     }
 }

@@ -7,6 +7,7 @@
     Visual="Material"
     BackgroundColor="Transparent"
     Title="Grid Example">
+    
     <ScrollView BackgroundColor="Transparent">
         <StackLayout BackgroundColor="Transparent">
             <FlexLayout x:Name="F" Direction="Row" Wrap="Wrap" BackgroundColor="Transparent">

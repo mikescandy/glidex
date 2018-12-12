@@ -5,18 +5,22 @@
     xmlns:local="clr-namespace:glidex.forms.sample"
     x:Class="Android.Glide.Sample.MainPage"
     Title="GlideX.Forms Sample">
-    <StackLayout Padding="5">
-        <Label Text="400 Images in a Grid:" />
-        <Button Clicked="Grid_Clicked" Text="Grid Example" />
-        <Label Text="Edge Cases:" />
-        <Button Clicked="Edge_Clicked" Text="Edge Cases" />
-        <Label Text="Images in a ViewCell in a ListView" />
-        <Button Clicked="ViewCell_Clicked" Text="ViewCells" />
-        <Label Text="ImageCells in a ListView" />
-        <Button Clicked="ImageCell_Clicked" Text="ImageCells" />
-        <Label Text="Huge Images (Profiled)" />
-        <Button Clicked="HugeImage_Clicked" Text="Huge Images" />
-        <Label Text="Bindable FlexLayou:" />
-        <Button Clicked="Flex_Clicked" Text="FlexLayout Example" />
-    </StackLayout>
+    <ScrollView>
+        <StackLayout Padding="5">
+            <Label Text="Wrapper bug:" />
+            <Button Clicked="Wrapper_Clicked" Text="Wrapper bug" />
+            <Label Text="400 Images in a Grid:" />
+            <Button Clicked="Grid_Clicked" Text="Grid Example" />
+            <Label Text="Edge Cases:" />
+            <Button Clicked="Edge_Clicked" Text="Edge Cases" />
+            <Label Text="Images in a ViewCell in a ListView" />
+            <Button Clicked="ViewCell_Clicked" Text="ViewCells" />
+            <Label Text="ImageCells in a ListView" />
+            <Button Clicked="ImageCell_Clicked" Text="ImageCells" />
+            <Label Text="Huge Images (Profiled)" />
+            <Button Clicked="HugeImage_Clicked" Text="Huge Images" />
+            <Label Text="Bindable FlexLayout" />
+            <Button Clicked="Flex_Clicked" Text="FlexLayout Example" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Android.Glide.Sample</RootNamespace>
     <AssemblyName>glidex.forms.sample</AssemblyName>
-    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -83,6 +83,9 @@
     <Compile Include="Forms\HugeImagePage.xaml.cs">
       <DependentUpon>HugeImagePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Forms\WrapperBugPage.xaml.cs">
+      <DependentUpon>WrapperBugPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,7 +114,9 @@
     <EmbeddedResource Include="Forms\App.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\MainPage.xaml" />
+    <EmbeddedResource Include="Forms\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\patch1.jpg" />
@@ -174,6 +179,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\FlexLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\WrapperBugPage.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
